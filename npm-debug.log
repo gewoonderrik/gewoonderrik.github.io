@@ -1,0 +1,227 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose readDependencies loading dependencies from /Users/derrik/Sites/gewoonderrik.github.io/package.json
+5 warn package.json gewoonderrik@ No description
+6 warn package.json gewoonderrik@ No README data
+7 verbose install where, deps [ '/Users/derrik/Sites/gewoonderrik.github.io',
+7 verbose install   [ 'babel-loader',
+7 verbose install     'babel-preset-es2015',
+7 verbose install     'beepbeep',
+7 verbose install     'bower',
+7 verbose install     'bower-webpack-plugin',
+7 verbose install     'colors',
+7 verbose install     'eslint',
+7 verbose install     'eslint-config-airbnb-base',
+7 verbose install     'eslint-loader',
+7 verbose install     'eslint-plugin-import',
+7 verbose install     'gulp',
+7 verbose install     'gulp-cached',
+7 verbose install     'gulp-cssnano',
+7 verbose install     'gulp-livereload',
+7 verbose install     'gulp-plumber',
+7 verbose install     'gulp-sass',
+7 verbose install     'gulp-sass-glob',
+7 verbose install     'gulp-scss-lint',
+7 verbose install     'webpack-stream' ] ]
+8 verbose install where, peers [ '/Users/derrik/Sites/gewoonderrik.github.io', [] ]
+9 verbose installManyTop reading for lifecycle /Users/derrik/Sites/gewoonderrik.github.io/package.json
+10 info preinstall gewoonderrik@
+11 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/babel-core/package.json
+12 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/babel-loader/package.json
+13 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/babel-preset-es2015/package.json
+14 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/beepbeep/package.json
+15 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/bower/package.json
+16 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/bower-webpack-plugin/package.json
+17 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/colors/package.json
+18 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/eslint/package.json
+19 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/eslint-config-airbnb-base/package.json
+20 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/eslint-loader/package.json
+21 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/eslint-plugin-import/package.json
+22 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp/package.json
+23 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-cached/package.json
+24 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-cssnano/package.json
+25 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-livereload/package.json
+26 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-plumber/package.json
+27 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-sass/package.json
+28 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-sass-glob/package.json
+29 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-scss-lint/package.json
+30 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/webpack/package.json
+31 verbose installManyTop reading scoped package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/webpack-stream/package.json
+32 info package.json beepbeep@1.2.0 No license field.
+33 info package.json gulp-cached@1.1.0 No license field.
+34 verbose readDependencies loading dependencies from /Users/derrik/Sites/gewoonderrik.github.io/package.json
+35 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/babel-core/package.json
+36 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/babel-loader/package.json
+37 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/babel-preset-es2015/package.json
+38 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/beepbeep/package.json
+39 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/bower/package.json
+40 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/bower-webpack-plugin/package.json
+41 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/colors/package.json
+42 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/eslint/package.json
+43 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/eslint-config-airbnb-base/package.json
+44 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/eslint-loader/package.json
+45 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/eslint-plugin-import/package.json
+46 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp/package.json
+47 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-cached/package.json
+48 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-cssnano/package.json
+49 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-livereload/package.json
+50 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-plumber/package.json
+51 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-sass/package.json
+52 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-sass-glob/package.json
+53 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/gulp-scss-lint/package.json
+54 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/webpack/package.json
+55 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/webpack-stream/package.json
+56 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/.bin/bower/package.json
+57 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/.bin/eslint/package.json
+58 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/.bin/gulp/package.json
+59 verbose targetResolver reading package data from /Users/derrik/Sites/gewoonderrik.github.io/node_modules/.bin/webpack/package.json
+60 verbose already installed skipping beepbeep@^1.2.0 /Users/derrik/Sites/gewoonderrik.github.io
+61 verbose already installed skipping bower@^1.7.7 /Users/derrik/Sites/gewoonderrik.github.io
+62 verbose already installed skipping bower-webpack-plugin@^0.1.9 /Users/derrik/Sites/gewoonderrik.github.io
+63 verbose already installed skipping colors@^1.1.2 /Users/derrik/Sites/gewoonderrik.github.io
+64 verbose already installed skipping eslint@^3.1.1 /Users/derrik/Sites/gewoonderrik.github.io
+65 verbose already installed skipping eslint-config-airbnb-base@^4.0.0 /Users/derrik/Sites/gewoonderrik.github.io
+66 verbose already installed skipping eslint-loader@^1.4.1 /Users/derrik/Sites/gewoonderrik.github.io
+67 verbose already installed skipping eslint-plugin-import@^1.10.2 /Users/derrik/Sites/gewoonderrik.github.io
+68 verbose already installed skipping gulp@^3.9.1 /Users/derrik/Sites/gewoonderrik.github.io
+69 verbose already installed skipping gulp-cached@^1.1.0 /Users/derrik/Sites/gewoonderrik.github.io
+70 verbose already installed skipping gulp-cssnano@^2.1.1 /Users/derrik/Sites/gewoonderrik.github.io
+71 verbose already installed skipping gulp-livereload@^3.8.1 /Users/derrik/Sites/gewoonderrik.github.io
+72 verbose already installed skipping gulp-plumber@^1.1.0 /Users/derrik/Sites/gewoonderrik.github.io
+73 verbose already installed skipping gulp-sass@^2.2.0 /Users/derrik/Sites/gewoonderrik.github.io
+74 verbose already installed skipping gulp-sass-glob@^1.0.6 /Users/derrik/Sites/gewoonderrik.github.io
+75 verbose already installed skipping gulp-scss-lint@^0.3.9 /Users/derrik/Sites/gewoonderrik.github.io
+76 verbose already installed skipping webpack-stream@^3.2.0 /Users/derrik/Sites/gewoonderrik.github.io
+77 verbose already installed skipping babel-loader@^6.2.4 /Users/derrik/Sites/gewoonderrik.github.io
+78 verbose already installed skipping babel-preset-es2015@^6.6.0 /Users/derrik/Sites/gewoonderrik.github.io
+79 silly install resolved []
+80 info build /Users/derrik/Sites/gewoonderrik.github.io
+81 info linkStuff gewoonderrik@
+82 silly linkStuff gewoonderrik@ has /Users/derrik/Sites as its parent node_modules
+83 verbose linkBins gewoonderrik@
+84 verbose linkMans gewoonderrik@
+85 verbose rebuildBundles gewoonderrik@
+86 verbose rebuildBundles [ '.bin',
+86 verbose rebuildBundles   'babel-core',
+86 verbose rebuildBundles   'babel-loader',
+86 verbose rebuildBundles   'babel-preset-es2015',
+86 verbose rebuildBundles   'beepbeep',
+86 verbose rebuildBundles   'bower',
+86 verbose rebuildBundles   'bower-webpack-plugin',
+86 verbose rebuildBundles   'colors',
+86 verbose rebuildBundles   'eslint',
+86 verbose rebuildBundles   'eslint-config-airbnb-base',
+86 verbose rebuildBundles   'eslint-loader',
+86 verbose rebuildBundles   'eslint-plugin-import',
+86 verbose rebuildBundles   'gulp',
+86 verbose rebuildBundles   'gulp-cached',
+86 verbose rebuildBundles   'gulp-cssnano',
+86 verbose rebuildBundles   'gulp-livereload',
+86 verbose rebuildBundles   'gulp-plumber',
+86 verbose rebuildBundles   'gulp-sass',
+86 verbose rebuildBundles   'gulp-sass-glob',
+86 verbose rebuildBundles   'gulp-scss-lint',
+86 verbose rebuildBundles   'webpack',
+86 verbose rebuildBundles   'webpack-stream' ]
+87 verbose rebuild bundle /Users/derrik/Sites/gewoonderrik.github.io/node_modules/babel-core
+88 info build /Users/derrik/Sites/gewoonderrik.github.io/node_modules/babel-core
+89 info preinstall babel-core@6.17.0
+90 info linkStuff babel-core@6.17.0
+91 silly linkStuff babel-core@6.17.0 has /Users/derrik/Sites/gewoonderrik.github.io/node_modules as its parent node_modules
+92 verbose linkBins babel-core@6.17.0
+93 verbose linkMans babel-core@6.17.0
+94 verbose rebuildBundles babel-core@6.17.0
+95 verbose rebuildBundles [ '.bin',
+95 verbose rebuildBundles   'babel-code-frame',
+95 verbose rebuildBundles   'babel-generator',
+95 verbose rebuildBundles   'babel-helpers',
+95 verbose rebuildBundles   'babel-messages',
+95 verbose rebuildBundles   'babel-register',
+95 verbose rebuildBundles   'babel-runtime',
+95 verbose rebuildBundles   'babel-template',
+95 verbose rebuildBundles   'babel-traverse',
+95 verbose rebuildBundles   'babel-types',
+95 verbose rebuildBundles   'babylon',
+95 verbose rebuildBundles   'convert-source-map',
+95 verbose rebuildBundles   'debug',
+95 verbose rebuildBundles   'json5',
+95 verbose rebuildBundles   'lodash',
+95 verbose rebuildBundles   'minimatch',
+95 verbose rebuildBundles   'path-exists',
+95 verbose rebuildBundles   'path-is-absolute',
+95 verbose rebuildBundles   'private',
+95 verbose rebuildBundles   'shebang-regex',
+95 verbose rebuildBundles   'slash',
+95 verbose rebuildBundles   'source-map' ]
+96 info install babel-core@6.17.0
+97 info postinstall babel-core@6.17.0
+98 verbose rebuild bundle /Users/derrik/Sites/gewoonderrik.github.io/node_modules/webpack
+99 info build /Users/derrik/Sites/gewoonderrik.github.io/node_modules/webpack
+100 info preinstall webpack@1.13.2
+101 info linkStuff webpack@1.13.2
+102 silly linkStuff webpack@1.13.2 has /Users/derrik/Sites/gewoonderrik.github.io/node_modules as its parent node_modules
+103 verbose linkBins webpack@1.13.2
+104 verbose link bins [ { webpack: './bin/webpack.js' },
+104 verbose link bins   '/Users/derrik/Sites/gewoonderrik.github.io/node_modules/.bin',
+104 verbose link bins   false ]
+105 verbose linkMans webpack@1.13.2
+106 verbose rebuildBundles webpack@1.13.2
+107 silly gentlyRm /Users/derrik/Sites/gewoonderrik.github.io/node_modules/.bin/webpack is being purged
+108 verbose gentlyRm don't care about contents; nuking /Users/derrik/Sites/gewoonderrik.github.io/node_modules/.bin/webpack
+109 verbose rebuildBundles [ '.bin',
+109 verbose rebuildBundles   'acorn',
+109 verbose rebuildBundles   'async',
+109 verbose rebuildBundles   'clone',
+109 verbose rebuildBundles   'enhanced-resolve',
+109 verbose rebuildBundles   'interpret',
+109 verbose rebuildBundles   'loader-utils',
+109 verbose rebuildBundles   'memory-fs',
+109 verbose rebuildBundles   'mkdirp',
+109 verbose rebuildBundles   'node-libs-browser',
+109 verbose rebuildBundles   'optimist',
+109 verbose rebuildBundles   'supports-color',
+109 verbose rebuildBundles   'tapable',
+109 verbose rebuildBundles   'uglify-js',
+109 verbose rebuildBundles   'watchpack',
+109 verbose rebuildBundles   'webpack-core' ]
+110 silly vacuum-fs purging /Users/derrik/Sites/gewoonderrik.github.io/node_modules/.bin/webpack
+111 silly vacuum-fs quitting because other entries in /Users/derrik/Sites/gewoonderrik.github.io/node_modules/.bin
+112 info install webpack@1.13.2
+113 info postinstall webpack@1.13.2
+114 info install gewoonderrik@
+115 info postinstall gewoonderrik@
+116 verbose unsafe-perm in lifecycle true
+117 info gewoonderrik@ Failed to exec postinstall script
+118 verbose stack Error: gewoonderrik@ postinstall: `bower install && gulp`
+118 verbose stack Exit status 1
+118 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+118 verbose stack     at emitTwo (events.js:87:13)
+118 verbose stack     at EventEmitter.emit (events.js:172:7)
+118 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+118 verbose stack     at emitTwo (events.js:87:13)
+118 verbose stack     at ChildProcess.emit (events.js:172:7)
+118 verbose stack     at maybeClose (internal/child_process.js:827:16)
+118 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+119 verbose pkgid gewoonderrik@
+120 verbose cwd /Users/derrik/Sites/gewoonderrik.github.io
+121 error Darwin 14.5.0
+122 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+123 error node v4.4.7
+124 error npm  v2.15.8
+125 error code ELIFECYCLE
+126 error gewoonderrik@ postinstall: `bower install && gulp`
+126 error Exit status 1
+127 error Failed at the gewoonderrik@ postinstall script 'bower install && gulp'.
+127 error This is most likely a problem with the gewoonderrik package,
+127 error not with npm itself.
+127 error Tell the author that this fails on your system:
+127 error     bower install && gulp
+127 error You can get information on how to open an issue for this project with:
+127 error     npm bugs gewoonderrik
+127 error Or if that isn't available, you can get their info via:
+127 error
+127 error     npm owner ls gewoonderrik
+127 error There is likely additional logging output above.
+128 verbose exit [ 1, true ]

@@ -1,0 +1,21 @@
+$white: white;
+$very-light-grey: #F0F0F0;
+$light-grey: #555;
+$grey: #333;
+$dark-grey: #111;
+$black: black;
+
+$green: #00c2a5;
+$blue: #00b0d4;
+$orange: #fb701e;
+$red: #e2413e;
+
+$primary-color: $black;
+
+$border-color: tint($grey, 50%);
+$border-color-focus: $grey;
+
+$heading-color: $dark-grey;
+$text-color: $grey;
+$light-background: $light-grey;
+$text-light: tint($grey, 12.5%);

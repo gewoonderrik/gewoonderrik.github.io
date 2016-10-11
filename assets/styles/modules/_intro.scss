@@ -1,0 +1,54 @@
+.intro {
+  $intro-background: $primary-color;
+
+  @include full-width();
+  background-color: $intro-background;
+  height: 100vh;
+  padding: 2em;
+  text-align: center;
+  width: 100vw;
+
+  &-inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &-title {
+    border: 4px solid $white;
+    color: $white;
+    display: inline-block;
+    font-family: $heading-font;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    padding: 1px 10px 4px;
+
+    @include respond-to('small') {
+      padding: 1px 15px 4px;
+    }
+
+    &-desktop {
+      display: none;
+
+      @include respond-to('small') {
+        display: block;
+      }
+    }
+
+    &-mobile {
+      @include respond-to('small') {
+        display: none;
+      }
+    }
+  }
+
+  &-sub-title {
+    color: $white;
+    font-family: $text-font;
+    font-weight: 400;
+    font-size: 1.125em;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+}

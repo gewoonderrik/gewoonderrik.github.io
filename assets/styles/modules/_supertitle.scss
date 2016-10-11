@@ -1,0 +1,11 @@
+.super-title {
+  &::after {
+    background-color: $heading-color;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    width: 60px;
+  }
+}

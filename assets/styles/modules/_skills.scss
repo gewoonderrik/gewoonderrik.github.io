@@ -1,0 +1,53 @@
+.skills {
+
+  .skill {
+    @include full-width();
+    background-color: $very-light-grey;
+    border-radius: 3px;
+    font-family: $heading-font;
+    font-size: 0.8em;
+    color: $white;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75em;
+    overflow: hidden;
+    padding: 4px 8px;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      position: relative;
+      z-index: 1;
+    }
+
+    &::after {
+      background-color: $light-grey;
+      content: '';
+      padding: 4px 8px;
+      float: left;
+      height: 50px;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    &-10::after {
+      width: 100%;
+    }
+
+    &-9::after {
+      width: 90%;
+    }
+
+    &-8::after {
+      width: 80%;
+    }
+
+    &-7::after {
+      width: 70%;
+    }
+
+    &-6::after {
+      width: 60%;
+    }
+  }
+}

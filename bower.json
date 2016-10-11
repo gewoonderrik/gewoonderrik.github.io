@@ -1,0 +1,6 @@
+{
+  "name": "ajax-examples",
+  "dependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

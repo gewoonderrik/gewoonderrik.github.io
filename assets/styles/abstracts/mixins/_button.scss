@@ -1,0 +1,6 @@
+@mixin button() {
+  color: $white;
+  font-weight: 700;
+  padding: 15px 25px;
+  transition: all $animation-speed $animation-easing;
+}

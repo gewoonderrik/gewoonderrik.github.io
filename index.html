@@ -1,23 +1,98 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Derrik Wolthuis | Dad. Front-end developer. Coffee addict.</title>
+		<meta name="author" content="Derrik Wolthuis">
+		<meta name="description" content="">
+		<meta name="robots" content="all">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets/styles/output/main.css" type="text/css">
+		<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="nav-inner">
+				<a href="/" class="nav-title">
+					Derrik Wolthuis
+				</a>
 
-<div class="home">
+				<ul class="nav-list">
+					<li>
+						<a href="#about">
+							About
+						</a>
+					</li>
+					<li>
+						<a href="#work">
+							Work
+						</a>
+					</li>
+					<li>
+						<a href="#contact">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<header class="intro">
+			<div class="intro-inner">
+				<h1 class="intro-title">
+					<span class="intro-title-mobile">
+						DW
+					</span>
 
-  <h1 class="page-heading">Posts</h1>
+					<span class="intro-title-desktop">
+						Derrik Wolthuis
+					</span>
+				</h1>
+				<h2 class="intro-sub-title">
+					Dad. Front-end developer. Coffee addict.
+				</h2>
+			</div>
+		</header>
+		<section class="life">
+			<div class="life-inner">
+				<div class="life-content">
+					<h2 class="super-title">
+						About me
+					</h2>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus imperdiet nisl, sit amet sagittis odio lobortis id. Suspendisse gravida libero at ultricies luctus.
+					</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li> 
-    {% endfor %}
-  </ul>
+					<p>
+						Morbi nunc libero, congue eu velit nec, eleifend auctor tortor. <strong>Donec</strong> enim elit, interdum placerat enim et, bibendum vulputate lectus. Sed pellentesque <em>egestas</em> arcu posuere pulvinar. Maecenas sit amet nisi volutpat, pellentesque orci vel, eleifend dui. <a href="#">Curabitur</a> laoreet felis ut dolor aliquet imperdiet. Nunc quis rutrum libero. Maecenas lectus orci, scelerisque ut est at, feugiat convallis ipsum.
+					</p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis, nisl suscipit ullamcorper bibendum, tellus nulla euismod ex, tincidunt iaculis nisi ipsum quis lacus. Suspendisse convallis, eros et hendrerit vehicula, diam nulla eleifend ligula, et feugiat tellus odio id diam. Ut tempor sit amet nisl nec finibus. Duis turpis sapien, volutpat sed vestibulum sit amet, cursus sed erat.
+					</p>
+				</div>
 
-</div>
+				<div class="life-sidebar">
+					<h3>
+						Skills
+					</h3>
+					<div class="skills">
+						<div class="skill skill-8">
+							<span>HTML5</span>
+						</div>
+						<div class="skill skill-9">
+							<span>CSS/SASS</span>
+						</div>
+						<div class="skill skill-7">
+							<span>WordPress</span>
+						</div>
+						<div class="skill skill-7">
+							<span>SEO/SEA</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="assets/scripts/output/all.js"></script>
+	</body>
+</html>
