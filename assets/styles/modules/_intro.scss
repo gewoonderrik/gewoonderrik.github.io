@@ -20,12 +20,12 @@
     display: inline-block;
     font-family: $heading-font;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     margin-bottom: 20px;
-    padding: 1px 10px 4px;
+    padding: 0 10px;
 
     @include respond-to('small') {
-      padding: 1px 15px 4px;
+      padding: 0 15px;
     }
 
     &-desktop {
