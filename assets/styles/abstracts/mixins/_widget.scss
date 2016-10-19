@@ -1,0 +1,8 @@
+@mixin widget() {
+  @include full-width();
+  margin-bottom: 3.75em;
+
+  &:last-of-type {
+  	margin-bottom: 0;
+  }
+}

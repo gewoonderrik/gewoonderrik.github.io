@@ -1,0 +1,9 @@
+a {
+  color: $secondary-color;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($secondary-color, 12.5%);
+  }
+}

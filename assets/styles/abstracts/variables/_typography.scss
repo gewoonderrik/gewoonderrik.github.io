@@ -1,7 +1,7 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Rubik:400,500,700';
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One|Rubik+One|Rubik:400,400i,500,700');
 
-$heading-font: 'Rubik', sans-serif;
-$text-font: 'Open Sans', serif;
+$heading-font: 'Rubik One', sans-serif;
+$text-font: 'Rubik', serif;
 
 $font-sizes: (
   'base': (
@@ -9,9 +9,9 @@ $font-sizes: (
     'medium': 1em,
   ),
   'text-small': 0.9em,
-  'h1': 2em,
-  'h2': 1.5em,
-  'h3': 1.25em,
+  'h1': 2.25em,
+  'h2': 1.025em,
+  'h3': 1.65em,
   'h4': 1.1em,
   'blockquote': 1.75em,
 );

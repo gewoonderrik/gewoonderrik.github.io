@@ -1,16 +1,15 @@
 .nav {
-  $transparent-white: rgba(255, 255, 255, 0.8);
-
   @include full-width();
-  background-color: $transparent-white;
-  border-bottom: 1px solid $black;
+  background-color: $transparent-black;
+  border-bottom: 1px solid $white;
+  display: none;
   position: fixed;
-  opacity: 0;
-  transition: all ($animation-speed * 4) $animation-easing;
+  transition: all ($animation-speed * 2) $animation-easing;
   z-index: 1;
 
   .show-nav & {
-    opacity: 1;
+    background-color: $transparent-white;
+    border-bottom: 1px solid $black;
   }
 
   &-inner {
@@ -71,7 +70,11 @@
   }
 
   a {
-    color: $black;
+    color: $white;
     text-decoration: none;
+
+    .show-nav & {
+      color: $black;
+    }
   }
 }

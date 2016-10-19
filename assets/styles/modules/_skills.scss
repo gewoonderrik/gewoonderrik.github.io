@@ -1,18 +1,16 @@
 .skills {
+  @include widget();
 
   .skill {
+    @include engraved();
     @include full-width();
-    background-color: $very-light-grey;
+    background-color: $brown;
     border-radius: 3px;
-    font-family: $heading-font;
-    font-size: 0.8em;
     color: $white;
-    letter-spacing: 0.5px;
     margin-bottom: 0.75em;
     overflow: hidden;
-    padding: 4px 8px;
+    padding: 4px 12px;
     position: relative;
-    text-transform: uppercase;
 
     span {
       position: relative;
@@ -20,7 +18,7 @@
     }
 
     &::after {
-      background-color: $light-grey;
+      background-color: $secondary-color;
       content: '';
       padding: 4px 8px;
       float: left;
@@ -44,10 +42,6 @@
 
     &-7::after {
       width: 70%;
-    }
-
-    &-6::after {
-      width: 60%;
     }
   }
 }

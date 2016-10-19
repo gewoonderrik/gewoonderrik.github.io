@@ -1,21 +1,29 @@
 $white: white;
 $very-light-grey: #F0F0F0;
 $light-grey: #555;
-$grey: #333;
-$dark-grey: #111;
+$grey: rgb(69, 69, 69);
+$dark-grey: rgb(34, 34, 34);
 $black: black;
 
 $green: #00c2a5;
-$blue: #00b0d4;
-$orange: #fb701e;
 $red: #e2413e;
 
-$primary-color: $black;
+$blue: rgb(71, 187, 201);
+$orange: rgb(242, 108, 81);
+$light-brown: rgb(247, 244, 237);
+$brown: rgb(210, 194, 187);
+$dark-brown: rgb(78, 69, 64);
+
+$transparent-black: rgba(0, 0, 0, 0.8);
+$transparent-white: rgba(255, 255, 255, 0.8);
+
+$primary-color: $orange;
+$secondary-color: $blue;
 
 $border-color: tint($grey, 50%);
 $border-color-focus: $grey;
 
-$heading-color: $dark-grey;
-$text-color: $grey;
+$heading-color: $dark-brown;
+$text-color: $dark-brown;
 $light-background: $light-grey;
 $text-light: tint($grey, 12.5%);

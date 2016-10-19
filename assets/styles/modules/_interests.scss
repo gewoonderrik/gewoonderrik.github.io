@@ -1,0 +1,78 @@
+.interests {
+	@include widget();
+
+	$dimension: (
+		'tiny': 80px,
+		'small': 100px,
+		'medium': 120px,
+		'large': 140px,
+		'huge': 160px,
+	);
+
+	height: 240px;
+	position: relative;
+
+	.interest {
+		@include engraved;
+		background-color: $dark-brown;
+		border-radius: 100%;
+		color: $white;
+		opacity: 0.8;
+		position: absolute;
+		text-align: center;
+		transition: all $animation-speed $animation-easing;
+
+		&:hover {
+			background-color: $primary-color;
+			opacity: 0.9;
+			transform: scale(1.1);
+			z-index: 100;
+		}
+
+		/**
+		 * Sizes
+		 */
+		&-tiny {
+			height: map-get($dimension, 'tiny');
+			line-height: map-get($dimension, 'tiny');
+			width: map-get($dimension, 'tiny');
+		}
+
+		&-small {
+			height: map-get($dimension, 'small');
+			line-height: map-get($dimension, 'small');
+			width: map-get($dimension, 'small');
+		}
+
+		&-medium {
+			height: map-get($dimension, 'medium');
+			line-height: map-get($dimension, 'medium');
+			width: map-get($dimension, 'medium');
+		}
+
+		&-large {
+			height: map-get($dimension, 'large');
+			line-height: map-get($dimension, 'large');
+			width: map-get($dimension, 'large');
+		}
+
+		&-huge {
+			height: map-get($dimension, 'huge');
+			line-height: map-get($dimension, 'huge');
+			width: map-get($dimension, 'huge');
+		}
+
+		/**
+		 * Types
+		 */
+		&-music {
+			left: 15%;
+			top: 22.5%;
+		}
+
+		&-tv-shows {
+			left: 45%;
+			top: 10%;
+		}
+	}
+}

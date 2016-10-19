@@ -15,12 +15,12 @@ jQuery(($) => {
 
     if (scrollTop > introHeight) {
       if (! isFixed) {
-        $body.addClass('show-nav');
+        $body.addClass('change-nav');
         isFixed = true;
       }
     } else {
       if (isFixed) {
-        $body.removeClass('show-nav');
+        $body.removeClass('change-nav');
         isFixed = false;
       }
     }

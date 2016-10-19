@@ -1,11 +1,13 @@
 body {
   $base: map-get($font-sizes, 'base');
-
+  
+  background-color: $light-brown;
   color: $text-color;
   font-family: $text-font;
   font-size: map-get($base, 'small');
   line-height: map-get($line-height, 'base');
   word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
 
   @include respond-to('medium') {
     font-size: map-get($base, 'medium');
