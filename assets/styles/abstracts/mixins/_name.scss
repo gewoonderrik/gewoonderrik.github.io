@@ -1,0 +1,7 @@
+@mixin name() {
+  display: inline-block;
+  font-family: $alt-font;
+  font-size: 1em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}

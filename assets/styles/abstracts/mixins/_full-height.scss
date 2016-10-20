@@ -1,0 +1,9 @@
+@mixin full-height() {
+  border: 10px solid $light-brown;
+  height: 100vh;
+  overflow: hidden;
+  padding: 2em;
+  position: relative;
+  text-align: center;
+  width: 100vw;
+}

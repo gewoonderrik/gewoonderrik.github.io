@@ -1,34 +1,45 @@
 .life {
+  $content: (
+    'padding': 7.5em,
+    'width': 65%,
+  );
+
+  $padding: (
+    'small': 2.5em,
+    'medium': 3.5em,
+    'large': 4.5em,
+  );
+
   @include full-width();
-  padding: 2.5em;
+  background-color: $light-brown;
+  margin-top: 100vh;
+  padding: map-get($padding, 'small');
 
   @include respond-to('medium') {
-    padding: 3.5em;
+    padding: map-get($padding, 'medium');
   }
 
   @include respond-to('large') {
-    padding: 4.5em;
+    padding: map-get($padding, 'large');
   }
 
   &-inner {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: $inner-width;
   }
 
   &-content {
-    margin-bottom: 2.5em;
+    margin-bottom: map-get($padding, 'small');
 
     @include respond-to('large') {
       float: left;
       margin-bottom: 0;
-      padding-right: 7.5em;
-      width: 65%;
+      padding-right: map-get($content, 'padding');
+      width: map-get($content, 'width');
     }
 
     p:first-of-type {
-      font-size: 1.5em;
-      left: -0.5px;
-      line-height: 1.75em;
+      @include intro();
     }
 
     p:last-of-type {
@@ -37,14 +48,14 @@
   }
 
   &-sidebar {
-    margin-bottom: 2.5em;
+    margin-bottom: map-get($padding, 'small');
     max-width: 360px;
 
     @include respond-to('large') {
       float: left;
       margin-bottom: 0;
-      max-width: inherit;
-      width: 35%;
+      max-width: none;
+      width: calc(100% - #{map-get($content, 'width')});
     }
   }
 }

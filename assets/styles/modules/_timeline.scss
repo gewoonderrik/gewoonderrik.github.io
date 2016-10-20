@@ -1,0 +1,27 @@
+.timeline {
+  $timeline-background: $secondary-color;
+	
+  @include full-height();
+  @include full-width();
+  background-color: $timeline-background;
+
+  &:after {
+  	background-color: shade($timeline-background, 15%);
+  	bottom: 2em;
+  	content: '';
+  	min-height: 100vh;
+  	left: 50%;
+  	margin-left: -3px;
+  	position: absolute;
+  	top: 2em;
+  	width: 6px;
+  }
+
+  &-year {
+  	@include engraved();
+  	background-color: $white;
+  	color: $timeline-background;
+  	display: inline-block;
+  	padding: 5px 15px;
+  }
+}
