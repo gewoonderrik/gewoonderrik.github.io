@@ -5,22 +5,22 @@
   );
 
   $padding: (
-    'small': 2.5em,
-    'medium': 3.5em,
+    'small': 2em,
+    'medium': 3.25em,
     'large': 4.5em,
   );
 
   @include full-width();
   background-color: $light-brown;
   margin-top: 100vh;
-  padding: map-get($padding, 'small');
+  padding: (map-get($padding, 'small') * 1.25) map-get($padding, 'small');
 
   @include respond-to('medium') {
-    padding: map-get($padding, 'medium');
+    padding: (map-get($padding, 'medium') * 1.5) map-get($padding, 'medium');
   }
 
   @include respond-to('large') {
-    padding: map-get($padding, 'large');
+    padding: (map-get($padding, 'large') * 1.75) map-get($padding, 'large');
   }
 
   &-inner {

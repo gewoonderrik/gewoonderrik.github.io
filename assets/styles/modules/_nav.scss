@@ -7,6 +7,7 @@
 
   .show-nav & {
     background-color: $light-brown;
+    border-bottom: 4px solid $primary-color;
     opacity: 1;
   }
 
@@ -23,12 +24,10 @@
 
     @include respond-to('medium') {
       @include name();
+      color: $primary-color;
       display: block;
       float: left;
-    }
-
-    a {
-      color: $heading-color;
+      margin-top: 13px;
     }
   }
 

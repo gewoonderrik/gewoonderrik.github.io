@@ -6,7 +6,7 @@
 
   @include full-height();
   @include full-width();
-  background-color: map-get($intro, 'background');
+  background: map-get($intro, 'background') url('../../../assets/img/intro.png') no-repeat 30% 20% / cover;
   position: fixed;
   z-index: -1;
 
@@ -21,16 +21,13 @@
     color: map-get($intro, 'color');
     margin-bottom: 2em;
 
-    &::before {
-      $dimension: 58px;
-
-      border: 4px solid map-get($intro, 'color');
-      border-radius: 100%;
-      display: block;
+    &::after {
+      background-color: map-get($intro, 'color');
       content: '';
-      height: $dimension;
-      margin: 0 auto 0.75em;
-      width: $dimension;
+      display: block;
+      height: 4px;
+      margin: 1em auto 0;
+      width: 120px;
     }
   }
 
@@ -38,11 +35,15 @@
     color: map-get($intro, 'color');
     font-family: $text-font;
     font-weight: 400;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1.25em;
     margin: 0 auto;
     max-width: 720px;
     text-transform: capitalize;
     width: 100%;
+
+    @include respond-to('medium') {
+      font-size: 3em;
+    }
   }
 }
