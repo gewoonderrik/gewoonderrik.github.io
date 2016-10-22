@@ -1,0 +1,7 @@
+@mixin circle($dimension) {
+  border-radius: 100%;
+  content: '';
+  display: block;
+  height: $dimension;
+  width: $dimension;
+}

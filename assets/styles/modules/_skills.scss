@@ -5,7 +5,7 @@
     @include engraved();
     @include full-width();
     background-color: $brown;
-    border-radius: 3px;
+    border-radius: $border-radius;
     color: $white;
     margin-bottom: 0.75em;
     overflow: hidden;

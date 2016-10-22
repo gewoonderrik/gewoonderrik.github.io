@@ -6,7 +6,7 @@
 
   @include full-height();
   @include full-width();
-  background: map-get($intro, 'background') url('../../../assets/img/intro.png') no-repeat 30% 20% / cover;
+  background: map-get($intro, 'background') url('../../../assets/img/intro.jpg') no-repeat 30% 20% / cover;
   position: fixed;
   z-index: -1;
 
