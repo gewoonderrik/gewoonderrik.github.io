@@ -1,3 +1,7 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   $base: map-get($font-sizes, 'base');
   
@@ -7,7 +11,6 @@ body {
   font-size: map-get($base, 'small');
   line-height: map-get($line-height, 'base');
   word-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
 
   @include respond-to('medium') {
     font-size: map-get($base, 'medium');

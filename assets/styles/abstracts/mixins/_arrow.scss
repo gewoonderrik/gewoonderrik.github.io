@@ -1,0 +1,11 @@
+@mixin arrow() {
+  $size: 5px;
+
+  border: solid transparent;
+  border-width: $size;
+  height: 0;
+  margin-top: -$size;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
