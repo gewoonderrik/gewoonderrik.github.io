@@ -1,0 +1,11 @@
+@mixin section-padding() {
+  padding: (map-get($section-padding, 'small') * 1.25) map-get($section-padding, 'small');
+
+  @include respond-to('medium') {
+    padding: (map-get($section-padding, 'medium') * 1.5) map-get($section-padding, 'medium');
+  }
+
+  @include respond-to('large') {
+    padding: (map-get($section-padding, 'large') * 1.75) map-get($section-padding, 'large');
+  }
+}

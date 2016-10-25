@@ -4,24 +4,10 @@
     'width': 65%,
   );
 
-  $padding: (
-    'small': 2em,
-    'medium': 3.25em,
-    'large': 4.5em,
-  );
-
   @include full-width();
+  @include section-padding();
   background-color: $light-brown;
   margin-top: 100vh;
-  padding: (map-get($padding, 'small') * 1.25) map-get($padding, 'small');
-
-  @include respond-to('medium') {
-    padding: (map-get($padding, 'medium') * 1.5) map-get($padding, 'medium');
-  }
-
-  @include respond-to('large') {
-    padding: (map-get($padding, 'large') * 1.75) map-get($padding, 'large');
-  }
 
   &-inner {
     margin: 0 auto;
@@ -29,7 +15,7 @@
   }
 
   &-content {
-    margin-bottom: map-get($padding, 'small');
+    margin-bottom: map-get($section-padding, 'small');
 
     @include respond-to('large') {
       float: left;
@@ -48,7 +34,7 @@
   }
 
   &-sidebar {
-    margin-bottom: map-get($padding, 'small');
+    margin-bottom: map-get($section-padding, 'small');
     max-width: 360px;
 
     @include respond-to('large') {

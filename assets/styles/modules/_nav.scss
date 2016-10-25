@@ -4,7 +4,7 @@
   pointer-events: none;
   position: fixed;
   transition: all ($animation-speed * 2) $animation-easing;
-  z-index: 2;
+  z-index: 1000;
 
   .show-nav & {
     background-color: $light-brown;
@@ -69,6 +69,10 @@
       padding: 1em 0.75em;
       text-transform: uppercase;
       transition: all $animation-speed $animation-easing;
+
+      &:hover {
+        color: $primary-color;
+      }
     }
   }
 }
