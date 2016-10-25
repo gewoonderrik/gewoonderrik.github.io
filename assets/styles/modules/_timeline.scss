@@ -89,9 +89,9 @@
       background-color: shade($timeline-background, 65%);
       border-radius: $border-radius $border-radius 0 0;
       color: $white;
-      line-height: 30px;
+      line-height: 1.6em;
       margin-bottom: 0;
-      padding: 5px 15px;
+      padding: 10px 15px;
       position: relative;
 
       &::after,
