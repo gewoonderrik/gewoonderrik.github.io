@@ -4,7 +4,7 @@
   @include full-height();
   @include full-width();
   @include section-padding();
-  background: $timeline-background url('../../../assets/img/timeline.jpg') no-repeat 30% 20% / cover;
+  background: $timeline-background url('../../../assets/img/timeline.jpg') no-repeat center center / cover;
   background-attachment: fixed;
   height: auto;
   min-height: 100vh;
