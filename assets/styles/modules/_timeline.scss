@@ -4,14 +4,15 @@
   @include full-height();
   @include full-width();
   @include section-padding();
-  background-color: $timeline-background;
+  background: $timeline-background url('../../../assets/img/timeline.jpg') no-repeat 30% 20% / cover;
+  background-attachment: fixed;
   height: auto;
   min-height: 100vh;
 
   &:after {
     $bar-width: 4px;
 
-    background-color: shade($timeline-background, 15%);
+    background-color: shade($timeline-background, 65%);
     content: '';
     left: 50%;
     margin-left: -($bar-width / 2);
@@ -22,9 +23,8 @@
   }
 
   h2 {
-    background-color: shade($timeline-background, 15%);
-    border: 4px solid $secondary-color;
-    color: $white;
+    background-color: shade($timeline-background, 65%);
+    color: $timeline-background;
     display: block;
     margin: 0 auto 20px;
     padding: 10px;
@@ -60,11 +60,10 @@
     }
     
     &::before {
-      $dimension: 24px;
+      $dimension: 16px;
 
       @include circle($dimension);
-      background-color: shade($timeline-background, 15%);
-      border: 4px solid $timeline-background;
+      background-color: shade($timeline-background, 65%);
       left: 50%;
       margin-left: -($dimension / 2);
       position: absolute;
@@ -72,7 +71,7 @@
       @include respond-to('large') {
         left: auto;
         margin-left: 0;
-        top: 48px;
+        top: 52px;
       }
     }
 
@@ -121,7 +120,7 @@
         float: right;
 
         &::before {
-          left: -52px;
+          left: -48px;
         }
 
         .timeline-entry-inner-title::before {
@@ -136,7 +135,7 @@
         float: left;
 
         &::before {
-          right: -52px;
+          right: -48px;
         }
 
         .timeline-entry-inner-title::after {
