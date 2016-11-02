@@ -25,10 +25,19 @@
   &-block-icon {
     background-color: $primary-color;
     border-radius: 100%;
+    color: $white;
     display: block;
+    font-size: 50px;
     height: 120px;
+    line-height: 120px;
     margin: 0 auto 30px;
+    text-shadow: 0 5px 0 shade($primary-color, 12.5%);
+    transition: all 0.2s ease-in-out;
     width: 120px;
+
+    &:hover {
+      transform: rotate(360deg) scale(1.1);
+    }
   }
 
   &-block-title {
