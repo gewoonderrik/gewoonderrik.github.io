@@ -15,12 +15,12 @@ jQuery(($) => {
 
     if (scrollTop > introHeight) {
       if (! isFixed) {
-        $body.addClass('change-nav');
+        $body.addClass('show-nav');
         isFixed = true;
       }
     } else {
       if (isFixed) {
-        $body.removeClass('change-nav');
+        $body.removeClass('show-nav');
         isFixed = false;
       }
     }
@@ -34,4 +34,11 @@ jQuery(($) => {
 
   calculateHeight();
   requestAnimationFrame(scrolling);
+
+  $('a[href^="#"]').on('click', function scrollToAnchor(event) {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $(this.hash).offset().top,
+    }, 500);
+  });
 });

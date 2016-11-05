@@ -5,7 +5,6 @@
   @include full-width();
   @include section-padding();
   background: $timeline-background url('../../../assets/img/timeline.jpg') no-repeat center center / cover;
-  background-attachment: fixed;
   height: auto;
   min-height: 100vh;
 
@@ -18,8 +17,16 @@
     margin-left: -($bar-width / 2);
     min-height: 100%;
     position: absolute;
-    top: 0;
+    top: (map-get($section-padding, 'small') * 1.25);
     width: $bar-width;
+
+    @include respond-to('medium') {
+      top: (map-get($section-padding, 'medium') * 1.5);
+    }
+
+    @include respond-to('large') {
+      top: (map-get($section-padding, 'large') * 1.75);
+    }
   }
 
   h2 {
@@ -73,6 +80,10 @@
         margin-left: 0;
         top: 52px;
       }
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
     }
 
     &-date {
