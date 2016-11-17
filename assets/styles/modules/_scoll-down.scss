@@ -1,6 +1,7 @@
 .scroll-down {
   @include horizontal-center();
   bottom: 40px;
+  cursor: pointer;
 
   &::after {
     animation: scroll-down 2s ease-in-out 1.5s infinite;

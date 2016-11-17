@@ -28,14 +28,14 @@
       background-color: map-get($intro, 'color');
       content: '';
       display: block;
-      height: $bar-height;
+      height: map-get($dash, 'height');
       margin: ($spacing / 2) auto 0;
       transition: $default-transition;
       width: 0;
     }
 
     &.animated::after {
-      width: 120px;
+      width: map-get($dash, 'width');
     }
   }
 

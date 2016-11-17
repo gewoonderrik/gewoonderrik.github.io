@@ -8,7 +8,7 @@
 
   .show-nav & {
     background-color: $light-brown;
-    box-shadow: 0 4px 0 $primary-color;
+    box-shadow: 0 map-get($dash, 'height') 0 $primary-color;
     opacity: 1;
     pointer-events: auto;
   }

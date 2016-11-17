@@ -1,11 +1,5 @@
 .credits {
   @include full-width();
-  background-color: shade($light-brown, 10%);
-  border: 10px solid $light-brown;
+  background-color: $light-brown;
   text-align: center;
-
-  p {
-    margin-bottom: 0;
-    padding: 20px 0;
-  }
 }
