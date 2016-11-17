@@ -1,0 +1,14 @@
+.scroll-down {
+  @include horizontal-center();
+  bottom: 40px;
+
+  &::after {
+    animation: scroll-down 2s ease-in-out 1.5s infinite;
+    color: $white;
+    content: '\f078';
+    display: block;
+    font-family: $icon-font;
+    font-size: 1.5em;
+    opacity: 0;
+  }
+}

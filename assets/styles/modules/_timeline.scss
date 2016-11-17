@@ -4,9 +4,13 @@
   @include full-height();
   @include full-width();
   @include section-padding();
-  background: $timeline-background url('../../../assets/img/timeline.jpg') no-repeat center center / cover;
+  background: $timeline-background;
   height: auto;
   min-height: 100vh;
+
+  @include respond-to('large') {
+    background: $timeline-background url('../../../assets/img/timeline.jpg') no-repeat center center / cover;
+  }
 
   &:after {
     background-color: shade($timeline-background, 65%);

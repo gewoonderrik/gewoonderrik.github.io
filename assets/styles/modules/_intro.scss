@@ -11,9 +11,7 @@
   z-index: -1;
 
   &-inner {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    @include vertical-center;
   }
 
   &-title {
@@ -21,7 +19,6 @@
     color: map-get($intro, 'color');
     margin-bottom: $spacing;
     opacity: 0;
-    transition: $default-transition;
 
     &.animated {
       opacity: 1;
@@ -32,7 +29,7 @@
       content: '';
       display: block;
       height: $bar-height;
-      margin: 1em auto 0;
+      margin: ($spacing / 2) auto 0;
       transition: $default-transition;
       width: 0;
     }
@@ -47,12 +44,11 @@
     font-family: $text-font;
     font-size: 2em;
     font-weight: 400;
-    line-height: 1.25em;
     margin: 0 auto;
     max-width: 720px;
     opacity: 0;
     text-transform: capitalize;
-    transition: $default-transition;
+    transform: translateY(100px);
     width: 100%;
 
     @include respond-to('medium') {
@@ -61,6 +57,7 @@
 
     &.animated {
       opacity: 1;
+      transform: translateY(0);
     }
   }
 }
