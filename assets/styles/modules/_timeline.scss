@@ -55,15 +55,21 @@
 
     margin: 0 auto 30px;
     max-width: map-get($entry, 'width');
+    opacity: 0;
     overflow: auto;
     position: relative;
     text-align: left;
+    transition: all 1s ease-in-out;
     width: 100%;
     z-index: 1;
 
     @include respond-to('large') {
       margin: 0 0 30px;
       overflow: visible;
+    }
+
+    &.animated {
+      opacity: 1;
     }
     
     &::before {
