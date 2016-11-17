@@ -9,8 +9,6 @@
   min-height: 100vh;
 
   &:after {
-    $bar-width: 4px;
-
     background-color: shade($timeline-background, 65%);
     content: '';
     left: 50%;
@@ -59,7 +57,7 @@
     overflow: auto;
     position: relative;
     text-align: left;
-    transition: all 1s ease-in-out;
+    transition: $default-transition;
     width: 100%;
     z-index: 1;
 
@@ -135,9 +133,14 @@
     &:nth-child(odd) {
       @include respond-to('large') {
         float: right;
+        transform: translateX(100px);
 
         &::before {
           left: -48px;
+        }
+
+        &.animated {
+          transform: translateX(0);
         }
 
         .timeline-entry-inner-title::before {
@@ -150,9 +153,14 @@
     &:nth-child(even) {      
       @include respond-to('large') {
         float: left;
+        transform: translateX(-100px);
 
         &::before {
           right: -48px;
+        }
+
+        &.animated {
+          transform: translateX(0);
         }
 
         .timeline-entry-inner-title::after {

@@ -10,7 +10,7 @@
   }
 
   &-block {
-    margin: 0 auto 40px;
+    margin: 0 auto $spacing;
     max-width: 340px;
 
     @include respond-to('large') {
@@ -23,28 +23,27 @@
   }
 
   &-block-icon {
+    $block-width: 120px;
+
     background-color: $primary-color;
     border-radius: 100%;
     color: $white;
     display: block;
     font-size: 50px;
-    height: 120px;
-    line-height: 120px;
-    margin: 0 auto 30px;
+    height: $block-width;
+    line-height: $block-width;
+    margin: 0 auto ($spacing / 2);
     text-shadow: 0 5px 0 shade($primary-color, 12.5%);
-    transition: all 0.2s ease-in-out;
-    width: 120px;
+    transition: $default-transition;
+    width: $block-width;
 
     &:hover {
       transform: rotate(360deg) scale(1.1);
     }
   }
 
-  &-block-title {
-    &::after {
-      margin-left: auto;
-      margin-right: auto;
-    }
+  &-block-title::after {
+    margin: 0 auto;
   }
 
   &-block-paragraph {

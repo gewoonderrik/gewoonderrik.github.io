@@ -19,9 +19,9 @@
   &-title {
     @include name();
     color: map-get($intro, 'color');
-    margin-bottom: 2em;
+    margin-bottom: $spacing;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: $default-transition;
 
     &.animated {
       opacity: 1;
@@ -31,9 +31,9 @@
       background-color: map-get($intro, 'color');
       content: '';
       display: block;
-      height: 4px;
+      height: $bar-height;
       margin: 1em auto 0;
-      transition: all 0.5s ease-in-out;
+      transition: $default-transition;
       width: 0;
     }
 
@@ -52,7 +52,7 @@
     max-width: 720px;
     opacity: 0;
     text-transform: capitalize;
-    transition: all 0.5s ease-in-out;
+    transition: $default-transition;
     width: 100%;
 
     @include respond-to('medium') {
