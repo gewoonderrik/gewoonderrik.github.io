@@ -8,6 +8,7 @@
   @include full-width();
   background: map-get($intro, 'background') url('../../../assets/img/intro.jpg') no-repeat 30% 20% / cover;
   position: fixed;
+  transition: $default-transition;
   z-index: -1;
 
   &-inner {
@@ -19,9 +20,14 @@
     color: map-get($intro, 'color');
     margin-bottom: $spacing;
     opacity: 0;
+    transition: $default-transition;
 
-    &.animated {
+    .loaded & {
       opacity: 1;
+
+      &::after {
+        width: map-get($dash, 'width');
+      }
     }
 
     &::after {
@@ -32,10 +38,6 @@
       margin: ($spacing / 2) auto 0;
       transition: $default-transition;
       width: 0;
-    }
-
-    &.animated::after {
-      width: map-get($dash, 'width');
     }
   }
 
@@ -49,13 +51,14 @@
     opacity: 0;
     text-transform: capitalize;
     transform: translateY(100px);
+    transition: $default-transition;
     width: 100%;
 
     @include respond-to('medium') {
       font-size: 3em;
     }
 
-    &.animated {
+    .loaded & {
       opacity: 1;
       transform: translateY(0);
     }

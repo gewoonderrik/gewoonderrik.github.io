@@ -1,12 +1,12 @@
 .timeline {
   $timeline-background: $secondary-color;
 
-  @include full-height();
   @include full-width();
   @include section-padding();
   background: $timeline-background;
   height: auto;
-  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
 
   @include respond-to('large') {
     background: $timeline-background url('../../../assets/img/timeline.jpg') no-repeat center center / cover;
@@ -38,6 +38,7 @@
     margin: 0 auto 20px;
     padding: 10px;
     position: relative;
+    text-align: center;
     width: 180px;
     z-index: 1;
   }

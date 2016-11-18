@@ -32,7 +32,7 @@
     font-size: 50px;
     height: $block-width;
     line-height: $block-width;
-    margin: 0 auto ($spacing / 2);
+    margin: 0 auto ($spacing / 2.5);
     text-shadow: 0 5px 0 shade($primary-color, 12.5%);
     transition: $default-transition;
     width: $block-width;

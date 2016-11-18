@@ -1,9 +1,10 @@
 jQuery(($) => {
   const $scrollDown = $('.scroll-down');
+  const windowHeight = $(window).height();
 
   $scrollDown.click(() => {
     $('html, body').animate({
-      scrollTop: ($(window).height() + 10),
+      scrollTop: windowHeight + 10,
     }, 500);
   });
 });
