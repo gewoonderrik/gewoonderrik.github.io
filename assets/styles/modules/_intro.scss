@@ -7,7 +7,7 @@
   @include full-height();
   @include full-width();
   background: map-get($intro, 'background') url('../../../assets/img/intro.jpg') no-repeat 30% 20% / cover;
-  position: fixed;
+  background-attachment: fixed;
   transition: $default-transition;
   z-index: -1;
 
