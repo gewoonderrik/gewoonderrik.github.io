@@ -3,4 +3,8 @@
   background-color: $light-brown;
   font-size: map-get($font-sizes, 'text-small');
   text-align: center;
+
+  p {
+    color: shade($text-color, 25%);
+  }
 }
